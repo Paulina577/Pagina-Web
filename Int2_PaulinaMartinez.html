@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Int2_PaulinaMartinez.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body  onload="myFunction()">
+    <form action="mailto:paulina.mperez2210@gmail.com" method="POST" enctype="text/plain" class="formulario" id="form">
+        <div class="form">
+            <h1>Registro</h1>
+            <div class="datos">
+                <input type="text" name="nombre" id="nombre" class="barra" required>
+                <label for="">Nombre</label>
+            </div>
+            <div class="datos">
+                <input type="text" name="apellido" id="apellido" class="barra" required>
+                <label for="">Apellidos</label>
+            </div>
+            <div class="datos">
+                <input type="number" name="edad" id="edad" class="barra" required>
+                <label for="">Edad</label>
+            </div>
+            <div class="datos">
+                <input type="email" name="email" id="email" class="barra" required>
+                <label for="">Email</label>
+            </div>
+            <div class="datos" >
+                <input type="number" name="telefono" id="telefono" class="barra" required>
+                <label for="">Teléfono</label>
+            </div>
+
+            <input type="submit" class="Enviar" value="Registrarse"> 
+            <button type="reset"> Borrar </button>
+
+            <p class="warnings" id="warnings"></p>
+            <p  onsubmit="return validar();"></p>
+           </div>
+        </div>
+    </form>
+    <script src="Int2_PaulinaMartinez.js"></script> 
+</body>
+</html>
